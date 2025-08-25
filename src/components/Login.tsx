@@ -18,6 +18,7 @@ const LoginForm = () => {
 
   const onSubmit = (data: LoginFormData) => {
     console.log("Valid data:", data);
+
     if (storedValue) {
       const userData = JSON.parse(storedValue);
       if (
@@ -29,6 +30,7 @@ const LoginForm = () => {
         alert("Please sign up first");
       }
     }
+    alert("Please Signup First");
   };
 
   return (
